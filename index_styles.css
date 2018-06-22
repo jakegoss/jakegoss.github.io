@@ -1,0 +1,39 @@
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+body {
+
+}
+
+.whatButton {
+    height: 20px;
+    width: 100px;
+}
+
+.whoButton{
+    height: 20px;
+    width: 100px;
+}
+
+.whereButton1{
+    height: 20px;
+    width: 100px;
+}
+
+.whereButton2 {
+    height: 20px;
+    width: 100px;
+}
+
+.whereButton3 {
+    height: 20px;
+    width: 100px;
+}
+
+.whereButton4 {
+    height: 20px;
+    width: 100px;
+}
