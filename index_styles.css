@@ -16,39 +16,43 @@ h1 {
 
 }
 .whatButton {
-    height: 20px;
+    height: 40px;
     width: relative;
+    background-color: orange;
     object-position: 20% 20%;
-    color: orange;
 }
 
 .whoButton{
+    height: 40px;
     width: relative;
-    height: 20px;
+    background-color: orange;
 }
     
 
 .whereButton1{
     height: 40px;
     width: relative;
+    background-color: orange;
     object-position: 20% 40%;
 }
 
 .whereButton2 {
-    height: 20px;
+    height: 40px;
     width: relative;
+    background-color: orange;
     object-position: 20% 60%;
 }
 
 .whereButton3 {
-    height: 20px;
+    height: 40px;
     width: relative;
+    background-color: orange;
     object-position: 20% 80%;
 }
 
 .whereButton4 {
-    height: 20px;
+    height: 40px;
     width: relative;
-    color: orange;
+    background-color: orange;
     object-position: 20% 100%;
 }
