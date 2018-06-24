@@ -1,54 +1,54 @@
 h1 {
+    
+    
+}
+#header {
     font-family: 'Dosis', sans-serif;
     color: rgb(154, 46, 255);
     text-align: center;
     letter-spacing: 2em;
-    
-}
-#header {
-    border: 0.5rem outset pink;
 
 }
 .canvas {
     margin: 0;
     overflow: hidden;
-    background: black;
-}
+    background: rgb(255, 255, 255);
 
+}
 .whatButton {
     height: 20px;
-    width: 100px;
+    width: relative;
     object-position: 20% 20%;
     color: orange;
 }
 
 .whoButton{
+    width: relative;
     height: 20px;
-    width: 100px;
-    object-position: 20% 20%;
 }
+    
 
 .whereButton1{
-    height: 20px;
-    width: 100px;
+    height: 40px;
+    width: relative;
     object-position: 20% 40%;
 }
 
 .whereButton2 {
     height: 20px;
-    width: 100px;
+    width: relative;
     object-position: 20% 60%;
 }
 
 .whereButton3 {
     height: 20px;
-    width: 100px;
+    width: relative;
     object-position: 20% 80%;
 }
 
 .whereButton4 {
     height: 20px;
-    width: 100px;
+    width: relative;
     color: orange;
     object-position: 20% 100%;
 }
