@@ -1,71 +1,92 @@
 header {
-    font-family: 'Dosis', sans-serif;
-    color:#faa;
-    text-align: center;
-    justify-content: space-around;
-    /* letter-spacing: 2em; */
-    text-shadow: 0px 4px 3px rgb(49, 49, 49);   
+  font-family: 'Sacramento-Regular';
+  font-weight: lighter;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 3em;
 
 }
+/* styles header neon sign*/
+header b{
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #5ce7ff, 0 0 0.5em #5ce7ff, 0 0 0.1em #5ce7ff, 0 10px 3px #000;
+}
+header b span{
+  animation: blink linear infinite 2s;
+}
+/* neon sign blinker */
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
 .canvas {
     margin: 0;
     overflow: relative;
     background-image: url(https://jakegoss.github.io/digital-wood-panels-wallpapers-25201-389919.jpg);
-    background-size: cover; 
-}
-.whatButton {
-    height: 120px;
-    width: relative;
-    position: relative;
-    bottom: 10%;
-    text-decoration: none;
-    border: 0%;
-    padding: 0%;
-    font-family: inherit;
+    background-size:cover;
 }
 
-.whoButton {
-    height: 120px;
-    width: relative;
-    position: relative;
-    bottom: 10%; 
+nav {
+  width: 10em;
+  text-decoration: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around
+  margin-top: 3em;
 }
+nav .what {
+   
+}
+
+nav .who {
     
-
-.whereButton1{
-    height: 40px;
-    width: relative;
-    background-color: orange;
-    object-position: 20% 40%;
 }
 
-.whereButton2 {
-    height: 40px;
-    width: relative;
-    background-color: orange;
-    object-position: 20% 60%;
+nav .where1 {
+    
 }
 
-.whereButton3 {
-    height: 40px;
-    width: relative;
-    background-color: orange;
-    object-position: 20% 80%;
+nav .where2 {
+   
 }
 
-.whereButton4 {
-    height: 40px;
-    width: relative;
-    background-color: orange;
-    object-position: 20% 100%;
+nav .where3 {
+   
 }
 
-iframe {
-    border: 0
+nav .where4 {
+
 }
 
-/*🚵‍♂️ 🚵‍♂️ 🍺 🍺/*
 
-<div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/l41lYNASsqlUOt9Xq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/l41lYNASsqlUOt9Xq">via GIPHY</a></p>
-<iframe src="https://giphy.com/embed/l41lYNASsqlUOt9Xq" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/l41lYNASsqlUOt9Xq">via GIPHY</a></p>
-https://giphy.com/gifs/l41lYNASsqlUOt9Xq/html5
+
