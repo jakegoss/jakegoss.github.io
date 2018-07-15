@@ -1,19 +1,18 @@
 body {
-    background-color: #F58C99;
+    background-color: #3D41CF;
 }
 
 #camera {
-    display: flex;
-    flex-direction: row;
-}
-
-#flashButton {
-   justify-content: center;
-   background-image: url();
-   background-size: 100px 130px;
-    height: 134px;  
-    width: 104px;
+    background-color: transparent;
+    background-size: 100%;
+    border: none;
     
 }
 
+#cameraBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20ch
+}
 

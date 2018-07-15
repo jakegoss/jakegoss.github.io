@@ -1,4 +1,3 @@
-        "images": {
             "fixed_height_still": {
                 "url": "https://media3.giphy.com/media/FRfhS8hv0U0Te/200_s.gif",
                 "width": "200",
@@ -168,9 +167,9 @@
             }
         },
         "title": "work out animation GIF by Jake"
-    },
+   
     "meta": {
-        "status": 200,
-        "msg": "OK",
-        "response_id": "5b4a61243636766a2ee38dea"
-    }
+            "status": 200,
+            "msg": "OK",
+            "response_id": "5b4a61243636766a2ee38dea"
+        }
