@@ -1,45 +1,66 @@
-header {
+/* header {
   font-family: Comfortaa;
   font-weight: 700;
   text-align: center;
   font-size: 3em;
   margin: 0%;
+} */
+
+body { 
+  margin: 0;
+  background-color: rgb(245,139,153);
 }
 
-body {
-    margin: 0;
-    background-color: #8CF5E8;
-    display: flex;
-    flex-direction: column;
-}
-
-nav {
+/* styling for mobile */
+@media screen and (min-width:768px) {
   
-}
-
-nav #what {
+  }
   
-}
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}  
 
-nav #who {
+#container #bulbDiv {
+    background-color: transparent;
+    border: 1em black solid;
+    height: 8em;
+    width: 8em;
+  }
+
+ #bulbDiv, img {
+    overflow: hidden !important;
+  
+  }
+  
+  container #who {
     
-}
-
-nav #where1 {
+  }
+  
+  container #what {
     
-}
-
-nav #where2 {
-   
-}
-
-nav #where3 {
-   
-}
-
-nav #where4 {
-
-}
-
-
-
+  }
+  
+  container #where1 {
+    
+  }
+  
+  container #where2 {
+    
+  }
+  
+  container #where3 {
+    
+  }
+  
+  container #where4 {
+    
+  }
+  
+  /* styling for desktop */
+  @media screen and (min-width:1000px) {
+    
+  }
+  
+  

@@ -1,5 +1,5 @@
 body {
-    background-color: hsl(352, 84%, 75%);
+    background-color: rgb(245,139,153);
 }
 
 #divBox {
@@ -11,5 +11,5 @@ body {
 }
 
 a:hover {
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=84407);
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=84407), auto;
 }
