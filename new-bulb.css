@@ -1,6 +1,9 @@
-$size: 40vmin;
-$bulb: #FFCC02;
-$base: #999;
+
+:root {
+  --mainsize: 40vmin;
+  --bulbcolor: #FFCC02;
+  --basecolor: #999;
+}
 
 body {
   overflow: hidden;
@@ -8,12 +11,14 @@ body {
 }
 
 #wrapper {
-  color: $bulb;
+  color: var(--bulbcolor);
   position: absolute;
-  left: calc(50% - #{$size * .5});
-  top: calc(50% - #{$size * 1.3 * .5});
-  height: $size * 1.3;
-  width: $size;
+  height: 800px;
+  width: 800px;
+  left: calc(50% - (var(var(--mainsize)) * .5));
+  top: calc(50% - (var(var(--mainsize)) * 1.3 * .5));
+  height: var(var(--mainsize)) * 1.3;
+  width: var(var(--mainsize));
 }
 
 #bulb {
@@ -27,41 +32,41 @@ body {
 
 #bulb-top {
   border-radius: 50%;
-  background: radial-gradient(circle at $size/2 $size/2, #ff0 0%, currentColor 40%, currentColor 80%, transparent 100%);
-  //filter: drop-shadow(0 0 20px currentColor);
-  width: $size;
-  height: $size;
+  background: radial-gradient(circle at var(var(--mainsize))/2 var(var(--mainsize))/2, #ff0 0%, currentColor 40%, currentColor 80%, transparent 100%);
+  filter: drop-shadow(0 0 20px currentColor);
+  width: var(var(--mainsize));
+  height: var(var(--mainsize));
 }
 
 #bulb-middle {
-  border-top: $size/2 solid currentColor;
-  border-left: $size/4 solid transparent;
-  border-right: $size/4 solid transparent;
+  border-top: var(var(--mainsize))/2 solid currentColor;
+  border-left: var(var(--mainsize))/4 solid transparent;
+  border-right: var(var(--mainsize))/4 solid transparent;
   position: absolute;
   height: 0;
   bottom: 2px;
-  width: $size/3.3;
-  left: calc(50% - #{$size}/2.5);
-  //filter: drop-shadow(0 0 20px currentColor);
+  width: var(var(--mainsize))/3.3;
+  left: calc(50% - (var(var(--mainsize)))/2.5);
+  filter: drop-shadow(0 0 20px currentColor);
 }
 
 #bulb-bottom {
   background-color: currentColor;
   border-radius: 50%;
   position: absolute;
-  height: $size/3;
-  width: $size/2;
-  left: calc(50% - #{$size}/4);
+  height: var(var(--mainsize))/3;
+  width: var(var(--mainsize))/2;
+  left: calc(50% - (var(var(--mainsize)))/4);
   bottom: 0;
-  //filter: drop-shadow(0 0 20px currentColor);
+  filter: drop-shadow(0 0 20px currentColor);
 }
 
 #bulb-base {
-  color: $base;
+  color: var(--bulbcolor);
   position: absolute;
-  height: $size/3;
-  width: $size;
-  bottom: -1 * ($size/3.7);
+  height: var(var(--mainsize))/3;
+  width: var(var(--mainsize));
+  bottom: -1 * (var(var(--mainsize))/3.7);
   z-index: 2;
 }
 
@@ -69,19 +74,19 @@ body {
   background: linear-gradient(to top, #bbb 20%, #555 100%);
   border-radius: 3px 3px 0 0;
   position: relative;
-  height: $size/16;
-  width: $size/2.5;
-  left: calc(50% - #{$size}/5);
+  height: var(var(--mainsize))/16;
+  width: var(var(--mainsize))/2.5;
+  left: calc(50% - (var(var(--mainsize)))/5);
 }
 
 #bulb-base-bottom {
-  border-bottom: $size/8 solid $base;
-  border-left: $size/7 solid transparent;
-  border-right: $size/7 solid transparent;
+  border-bottom: var(var(--mainsize))/8 solid #999;
+  border-left: var(var(--mainsize))/7 solid transparent;
+  border-right: var(var(--mainsize))/7 solid transparent;
   
   position: relative;
-  width: $size/8;
-  left: calc(50% - #{$size}/5);
+  width: var(var(--mainsize))/8;
+  left: calc(50% - (var(var(--mainsize)))/5);
 }
 
 .rivet {
@@ -91,16 +96,16 @@ body {
 .rivet-short {
   background-color: hsl(100, 0%, 20%);
   border-top: 3px solid hsl(100, 0%, 40%);
-  height: $size/48;
-  width: $size/3;
-  left: calc(50% - #{$size}/6);
+  height: var(var(--mainsize))/48;
+  width: var(var(--mainsize))/3;
+  left: calc(50% - (var(var(--mainsize)))/6);
 }
 
 .rivet-long {
   background: linear-gradient(to top, #aaa 20%, #555 100%);
   border-radius: 3px;
-  height: $size/32;
-  width: $size/2.5;
-  left: calc(50% - #{$size}/5);
+  height: var(var(--mainsize))/32;
+  width: var(var(--mainsize))/2.5;
+  left: calc(50% - (var(var(--mainsize)))/5);
 }
 

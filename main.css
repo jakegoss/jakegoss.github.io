@@ -1,15 +1,29 @@
-body {
-    background-color: rgb(245,139,153);
-}
-
-#divBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20ch;
-    background-color: transparent;
-}
-
-a:hover {
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=84407), auto;
-}
+/*header style*/
+.header{
+  background-image: url('../images/headerback.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+ }
+ 
+.navbar{
+  background:#0066FF;
+  position: fixed top;
+ }
+ .nav-link , .navbar-brand{
+  color: #f4f4f4;
+  cursor: pointer;
+ }
+ .nav-link{
+  margin-right: 1em !important;
+ }
+ .nav-link:hover{
+  background: #f4f4f4;
+  color: #0066FF;
+ }
+ .navbar-collapse{
+  justify-content: flex-end;
+ }
+ .navbar-toggler{
+   background:#fff !important;
+ }
