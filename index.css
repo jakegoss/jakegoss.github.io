@@ -37,6 +37,7 @@ body {
   background-color: transparent;
 }
 
+<<<<<<< HEAD
 #rightButtons {
   display: flex;
   flex-direction: column;
@@ -70,3 +71,14 @@ body {
 /* styling for mobile */
 @media screen and (min-width:768px) {
 }
+=======
+  }
+  
+  /* styling for desktop */
+  @media screen and (min-width:1000px) {
+    
+  }
+
+  /* Lignbulb design */
+
+>>>>>>> 203a6ed9e054e0c8a7817d870660813d58db46c7
