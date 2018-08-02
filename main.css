@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Comfortaa:300,400,700');
+
+html,h1,h2,h3,h4,h5,h6,a{
+  font-family: Comfortaa;
+  font-weight: 400;
+}
+  
 /* navbar style */
 .navbar{
-  background:#0066FF;
+  background:#607D8B;
   position: fixed top;
 }
 .nav-link , .navbar-brand{
@@ -12,7 +19,7 @@
 }
 .nav-link:hover{
   background: #f4f4f4;
-  color: #0066FF;
+  color: #607D8B;
 }
 .navbar-collapse{
   justify-content: flex-end;
@@ -43,10 +50,77 @@
   padding: 2em;
 }
 .description h2{
-color:#F97300;
+color:#455A64;
 }
 .description button{
-border:1px  solid #F97300;
-background:#F97300;
+border:1px  solid #455A64;
+background:#455A64;
 color:#fff;
+}
+/* about */
+.about{
+  margin: 4em 0;
+  padding: 1em;
+  position: relative;
+ }
+ .about h3{
+  color:#F97300;
+  margin: 2em;
+ }
+ .about img{
+  height: 100%;
+     width: 100%;
+     border-radius: 50%
+ }
+ .about span{
+  display: block;
+  color: #888;
+  position: absolute;
+  left: 115px;
+ }
+ .about .desc{
+  padding: 2em;
+  border-left:4px solid #10828C;
+ }
+ .about .desc h3{
+  color: #10828C;
+ }
+ .about .desc p{
+  line-height:2;
+  color:#888;
+ }
+ /*Portfolio*/
+.portfolio{
+	margin: 4em 0;
+    position: relative;	
+}
+.portfolio h1{
+	color:#F97300;
+	margin: 2em;	
+}
+.portfolio img{
+	 height: 15rem;
+	 width: 100%;
+   margin: 1em;
+}
+.contact-form{
+	margin: 6em 0;
+	position: relative;		
+}
+
+.contact-form h1{
+	padding:2em 1px;
+	color: #F97300; 
+}
+.contact-form .right{
+	max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+	background:  #F97300;
+	color: #fff;
+	border:0;
+}
+.contact-form .right .form-control::placeholder{
+	color: #888;
+	font-size: 16px;
 }
