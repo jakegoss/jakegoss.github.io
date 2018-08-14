@@ -1,22 +1,18 @@
 body { 
-    margin: 0;
-    background-color: rgb(128, 174, 241);
-    font-family: Comfortaa;
-    font-weight: 400;
-    
+  margin: 0;
+  background-color: rgb(128, 174, 241);
+  font-family: Comfortaa;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: repeat(5 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-#container {
-  margin-top: 6em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} 
 
 #leftButtons {
-  display: flex;
-  flex-direction: column;
-  align-items: inherit;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
 }
 
 #leftButtons #who {
@@ -37,11 +33,10 @@ body {
   background-color: transparent;
 }
 
-<<<<<<< HEAD
 #rightButtons {
-  display: flex;
-  flex-direction: column;
-  align-items: inherit;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  
 }
 
 #rightButtons #where2 {
@@ -62,23 +57,3 @@ body {
   background-color: transparent;
   
 }
-
-/* styling for desktop */
-@media screen and (min-width:1000px) {
-  
-}
-
-/* styling for mobile */
-@media screen and (min-width:768px) {
-}
-=======
-  }
-  
-  /* styling for desktop */
-  @media screen and (min-width:1000px) {
-    
-  }
-
-  /* Lignbulb design */
-
->>>>>>> 203a6ed9e054e0c8a7817d870660813d58db46c7
