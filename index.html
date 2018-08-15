@@ -23,7 +23,7 @@
                 <a href="https://www.linkedin.com/in/jake-goss" target="_blank">Look me up</a>
             </div>
         </div>
-        <div>
+        <img src="the-lightbulb-off.svg" alt="Circle" id="bulb" onclick="change();">
         <div id="rightButtons">
             <div id="where2">
                 <a href="mailto: jakegoss3@gmail.com"> shoot me an email</a>
@@ -35,9 +35,27 @@
                 <a href="http://www.jakegossphoto.com/" target="_blank">I also play with cameras</a>
             </div>
         </div>
-
+    </div>
     
-
+    <script>
+var image_tracker = 'off';
+ 
+ function change(){
+ var image = document.getElementById('bulb');
+ if(image_tracker=='off'){
+ image.src='the-lightbulb-on.svg';
+ image_tracker='on';
+ }
+ else{
+ image.src='the-lightbulb-off.svg';
+ image_tracker='off';
+ }
+ }
+ 
+ </script>
+ 
+ 
 </body>
+<!-- <div id="bulb" href="#" onclick="this.className='clicked'"></div> -->
 
 </html>
