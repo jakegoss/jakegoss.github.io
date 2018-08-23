@@ -2,60 +2,80 @@
 <html>
 
 <head>
+    <script type="text/javascript"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Abel|Comfortaa:300,400,700" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="index.css">
     <title>Jake Goss Portfolio</title>
 </head>
- 
+
 <body>
 
-    
-        <div id="leftButtons">
-            <div id="who">
-                <a href="bio.html">Who I am</a>
-            </div>
-            <div id="what">
-                <a href="projects.html">What I've Done</a>
-            </div>
-            <div id="where1">
-                <a href="https://www.linkedin.com/in/jake-goss" target="_blank">Look me up</a>
-            </div>
+
+    <div id="leftButtons">
+        <div id="who">
+            <a href="bio.html">Who I am</a>
         </div>
-        <img src="the-lightbulb-off.svg" alt="Circle" id="bulb" onclick="change();">
-        <div id="rightButtons">
-            <div id="where2">
-                <a href="mailto: jakegoss3@gmail.com"> shoot me an email</a>
-            </div>
-            <div id="where3">
-                <a href="https://github.com/jakegoss/" target="_blank">@github</a>
-            </div>
-            <div id="where4">
-                <a href="http://www.jakegossphoto.com/" target="_blank">I also play with cameras</a>
-            </div>
+        <div id="what">
+            <a href="projects.html">What I've Done</a>
+        </div>
+        <div id="where1">
+            <a href="https://www.linkedin.com/in/jake-goss" target="_blank">Look me up</a>
         </div>
     </div>
-    
+    <div class="center">
+        <img src="the-lightbulb-off.svg" alt="Circle" id="bulb" onclick=handleClick()>
+    </div>
+    <div id="rightButtons">
+        <div id="where2">
+            <a href="mailto: jakegoss3@gmail.com"> shoot me an email</a>
+        </div>
+        <div id="where3">
+            <a href="https://github.com/jakegoss/" target="_blank">@github</a>
+        </div>
+        <div id="where4">
+            <a href="http://www.jakegossphoto.com/" target="_blank">I also play with cameras</a>
+        </div>
+    </div>
+    </div>
+
     <script>
-var image_tracker = 'off';
- 
- function change(){
- var image = document.getElementById('bulb');
- if(image_tracker=='off'){
- image.src='the-lightbulb-on.svg';
- image_tracker='on';
- }
- else{
- image.src='the-lightbulb-off.svg';
- image_tracker='off';
- }
- }
- 
- </script>
- 
- 
+
+        function handleClick() {
+            changeBulb();
+        }
+
+        function changeBulb() {
+            var image_tracker = 'off';
+            var image = document.getElementById('bulb');
+            setTimeout(changeColor, 100);
+            if (image_tracker == 'off') {
+                image.src = 'the-lightbulb-on.svg';
+                image_tracker = 'on';
+            }
+            else {
+                image.src = 'the-lightbulb-off.svg';
+                image_tracker = 'off';
+            }
+        }
+
+        function changeColor() {
+            var color_tracker = 'dark';
+            var color = document.getElementById('body');
+            if (color_tracker == 'dark') {
+                document.body.style.backgroundColor = '#fcd84a';
+                color_tracker = 'light';
+            }
+            else {
+                document.body.style.backgroundColor = '#252525';
+                color_tracker = 'dark';
+            }
+            clearTimeout()
+        }
+        
+    </script>
+
 </body>
-<!-- <div id="bulb" href="#" onclick="this.className='clicked'"></div> -->
 
 </html>
