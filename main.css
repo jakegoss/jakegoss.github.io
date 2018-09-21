@@ -40,7 +40,7 @@ body{
   margin-top: 3em;
   z-index: 10;
 }
-#leftButtons #who {
+#leftButtons #bio {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -55,12 +55,13 @@ body{
   box-shadow: 1px 3px 5px grey;
   margin: 15px;
 }
-#leftButtons #what {
+#leftButtons #projects {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #00aeef;
+  color: white;
   text-decoration: none;
   padding: 0 4px 0 4px;
   height: 8em;
@@ -69,12 +70,13 @@ body{
   margin: 15px;
   box-shadow: 1px 3px 5px grey;
 }
-#leftButtons #where1 {
+#leftButtons #photo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #00aeef;
+  color: white;
   text-decoration: none;
   padding: 0 4px 0 4px;
   height: 8em;
@@ -105,23 +107,24 @@ body{
   margin-top: 3em;
   z-index: 10;
 }
-#rightButtons #where2 {
+#rightButtons #email {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #00aeef;
+  color: white;
   padding: 0 4px 0 4px;
   height: 8em;
   width: 8em;
   border-radius: 50%;
-  color: #91ed58;
+  color: white;
   box-shadow: 1px 3px 5px grey;
   margin: 15px;
   text-align: center;
   text-decoration: none;
 }
-#rightButtons #where3 {
+#rightButtons #hire {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -132,11 +135,11 @@ body{
   height: 8em;
   width: 8em;
   border-radius: 50%;
-  color: #91ed58;
+  color: white;
   box-shadow: 1px 3px 5px grey;
   margin: 15px;
 }
-#rightButtons #where4 {
+#rightButtons #github {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -147,7 +150,7 @@ body{
   height: 8em;
   width: 8em;
   border-radius: 50%;;
-  color: #91ed58;
+  color: white;
   box-shadow: 1px 3px 5px grey;
   margin: 15px;
 }
@@ -156,4 +159,22 @@ body{
   grid-column: 3/4;
   display: block;
   margin-top: 15%;
+}
+#bio:hover{
+  transform: scale(1.4)
+}
+#projects:hover{
+  transform: scale(1.4)
+}
+#photo:hover{
+  transform: scale(1.4)
+}
+#hire:hover{
+  transform: scale(1.4)
+}
+#github:hover{
+  transform: scale(1.4)
+}
+#email:hover{
+  transform: scale(1.4)
 }
