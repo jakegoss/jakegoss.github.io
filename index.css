@@ -1,101 +1,181 @@
-body { 
+body{
   display: grid;
-  margin: 0;
-  overflow: hidden;
-  font-family: Comfortaa;
-  font-weight: 400;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   grid-template-rows: 1fr 3fr 1fr;
-  background-color:grey;
+  grid-column: 2/5;
+  grid-row: 1/3;
+  font-weight: 400;
+  background-color: #f2fafd;
+  margin: 0;
+  /* overflow: hidden; */
+  font-family: Comfortaa;
+  
 }
+.title {
+  grid-row: 1/2;
+  grid-column: 2/5;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #00aeef;
+  border-radius: 30px;
+  height: 90%;
+  width: 100%;
+  font-size: 1.3em;
+  letter-spacing: .3em;
+  color: white;
+  box-shadow: 1px 3px 4px grey;
+  text-shadow: 1px 2px 2px grey;
+}
+
 #leftButtons {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
   align-items: end; 
+  justify-content: space-between;
+  margin-top: 3em;
+  z-index: 10;
 }
-#leftButtons #who {
-  display: block;
-  height: 40px;
-  width: 140px;
-  border: 2px solid black;
-  border-radius: 4px;
+#leftButtons #bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aeef;
   text-decoration: none;
-  color: #91ed58;
-  background-color: transparent;
-  box-shadow: 2px 2px 5px grey;
+  padding: 0 4px 0 4px;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 1px 3px 5px grey;
   margin: 15px;
 }
-#leftButtons #what {
+#leftButtons #projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aeef;
   color: white;
-  background-color: transparent;
-  display: block;
-  height: 40px;
-  width: 140px;
-  border: 2px solid blue;
-  border-radius: 4px;
+  text-decoration: none;
+  padding: 0 4px 0 4px;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;;
   margin: 15px;
-  box-shadow: 2px 2px 5px grey;
+  box-shadow: 1px 3px 5px grey;
 }
-#leftButtons #where1 {
+#leftButtons #photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aeef;
   color: white;
-  background-color: transparent;
-  display: block;
-  height: 40px;
-  width: 140px;
-  border: 2px solid blue;
-  border-radius: 4px;
+  text-decoration: none;
+  padding: 0 4px 0 4px;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
   margin: 15px;
-  box-shadow: 2px 2px 5px grey;
+  box-shadow: 1px 3px 5px grey;
+  text-align: center;
 }
 .center {
-  grid-column: 2/5;
-  grid-row: 1/3;
-  max-height: 80vh; 
-  /* background-image: url("the-lightbulb-off.svg") */
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin-top: 5em;
 }
-#bulb {
+#logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
+  margin-top: 10%;
+  max-width: 20vw;
 }
 #rightButtons {
   grid-column: 4 / 6;
   grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: start; 
+  justify-content: space-between;
+  margin-top: 3em;
+  z-index: 10;
 }
-#rightButtons #where2 {
-  color: white;  
-  background-color: transparent;
-  display: inline-block;
-  height: 40px;
-  width: 140px;
-  border: 2px solid blue;
-  border-radius: 4px;
+#rightButtons #email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aeef;
+  color: white;
+  padding: 0 4px 0 4px;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 1px 3px 5px grey;
   margin: 15px;
-  box-shadow: 2px 2px 5px grey;
+  text-align: center;
+  text-decoration: none;
 }
-#rightButtons #where3 {
-  color: white;  
-  background-color: transparent;
+#rightButtons #hire {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aeef;
+  text-decoration: none;
+  padding: 0 4px 0 4px;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 1px 3px 5px grey;
+  margin: 15px;
+}
+#rightButtons #github {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aeef;
+  text-decoration: none;
+  padding: 0 4px 0 4px;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;;
+  color: white;
+  box-shadow: 1px 3px 5px grey;
+  margin: 15px;
+}
+.auxpage {
+  grid-row: 2/3;
+  grid-column: 3/4;
   display: block;
-  height: 40px;
-  width: 140px;
-  border: 2px solid blue;
-  border-radius: 4px;
-  margin: 15px;
-  box-shadow: 2px 2px 5px grey;
+  margin-top: 15%;
 }
-#rightButtons #where4 {
-  color: white;  
-  background-color: transparent; 
-  display: block;
-  height: 40px;
-  width: 140px;
-  border: 2px solid blue;
-  border-radius: 4px;
-  margin: 15px;
-  box-shadow: 2px 2px 5px grey;
+#bio:hover{
+  transform: scale(1.4)
 }
-
+#projects:hover{
+  transform: scale(1.4)
+}
+#photo:hover{
+  transform: scale(1.4)
+}
+#hire:hover{
+  transform: scale(1.4)
+}
+#github:hover{
+  transform: scale(1.4)
+}
+#email:hover{
+  transform: scale(1.4)
+}
